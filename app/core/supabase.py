@@ -1,0 +1,7 @@
+from supabase import create_client, Client
+from app.core.config import settings
+
+SUPABASE_URL = "https://nsketqnpdgygwxlfkkcj.supabase.co/"
+SUPABASE_KEY = settings.SUPABASE_SERVICE_ROLE_KEY
+
+supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
